@@ -3,20 +3,22 @@
 <head>
     <title>Execution Context Example 5</title>
     <script type="text/javascript">
-          
+
         function add(num1, num2) {
             sum = num1 + num2;
             return sum;
         }
-        
+        // alert(sum) // sum is not defined
         var result = add(10, 20);  //30
+        alert(result);
         alert(sum);                //30
+        alert(num1);
 
-      
+
     </script>
 
 </head>
 <body>
-  
+
 </body>
 </html>
