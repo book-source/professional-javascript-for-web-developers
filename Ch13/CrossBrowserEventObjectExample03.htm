@@ -11,9 +11,9 @@
         btn.onclick = function(event){
             alert("Clicked");
             event = EventUtil.getEvent(event);
-            EventUtil.stopPropagation(event);
+            // EventUtil.stopPropagation(event);
         };
-        
+
         document.body.onclick = function(event){
             alert("Body clicked");
         };

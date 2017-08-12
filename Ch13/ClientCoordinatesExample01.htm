@@ -10,8 +10,17 @@
         var div = document.getElementById("myDiv");
         EventUtil.addHandler(div, "click", function(event){
             event = EventUtil.getEvent(event);
-            alert("Client coordinates: " + event.clientX + "," + event.clientY);        
+            alert("Client coordinates: " + event.clientX + "," + event.clientY);
         });
+
+        document.addEventListener("click", function(event){
+          alert("document clicked DOM2")
+        });
+        EventUtil.addHandler(document, "click", function(event){
+          alert("document clicked");
+        });
+
+
     </script>
 </body>
 </html>

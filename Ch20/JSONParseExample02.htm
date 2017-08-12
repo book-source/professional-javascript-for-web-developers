@@ -17,8 +17,8 @@
                    };
 
         var jsonText = JSON.stringify(book);
-        alert(jsonText);
-        
+        // alert(jsonText);
+
         var bookCopy = JSON.parse(jsonText, function(key, value){
             if (key == "releaseDate"){
                 return undefined;
@@ -26,8 +26,12 @@
                 return value;
             }
         });
-        
-        alert("releaseDate" in bookCopy);
+
+        console.log(book);    // json object
+        console.log(jsonText);       // {"title":"Professional JavaScript","authors":["Nicholas C. Zakas"],"edition":3,"year":2011,"releaseDate":"2011-11-30T16:00:00.000Z"}
+        console.log(typeof jsonText);  // string
+        console.log(bookCopy);      // json object
+        // alert("releaseDate" in bookCopy);  // false
 
     </script>
 </body>

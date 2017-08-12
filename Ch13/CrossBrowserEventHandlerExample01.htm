@@ -12,13 +12,13 @@
         var handler = function(){
             alert("Clicked");
         };
-        EventUtil.addHandler(btn, "click", handler); 
-        
+        EventUtil.addHandler(btn, "click", handler);
+
         var removeBtn = document.getElementById("myRemoveBtn");
         EventUtil.addHandler(removeBtn, "click", function(){
-            EventUtil.removeHandler(btn, "click", handler); 
+            EventUtil.removeHandler(btn, "click", handler);
         });
-        
+
     </script>
 </body>
 </html>
